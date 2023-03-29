@@ -5,6 +5,7 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: npm install && brew install borkdude/brew/babashka
+  - init: npm install 
+    command: brew install borkdude/brew/babashka
 
 
