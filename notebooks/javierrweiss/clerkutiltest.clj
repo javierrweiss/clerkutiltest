@@ -76,6 +76,11 @@
    '(fn [x]
       [:pre x "² is equal to " (javierrweiss.custom/square x) "."])})
 
+(def silly-viewer 
+  {:transform-fn clerk/mark-presented
+   :render-fn '(fn [x]
+                 [:p (javierrweiss.custom/give-me-your-name)])})
+
 ;; Use this new viewer to show that custom ClojureScript works:
 
 (clerk/with-viewer squared-viewer
