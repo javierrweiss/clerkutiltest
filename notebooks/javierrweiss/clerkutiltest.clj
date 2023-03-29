@@ -51,7 +51,7 @@
   {:transform-fn clerk/mark-presented
    :render-fn
    '(fn [x]
-      [:pre x "² is equal to " (* x x) "."])})
+      [:pre x "² es igual a " (* x x) "."])})
 
 ;; We can call the viewer like so:
 
@@ -91,3 +91,8 @@
 
 ;; `sci_viewers.cljs` also contains instructions on how to make JavaScript and
 ;; NPM dependencies available to your viewers.
+
+
+(comment 
+  (clerk/show! "notebooks/javierrweiss/clerkutiltest.clj")
+  )

@@ -17,7 +17,7 @@
 
 (def serve-defaults
   (assoc defaults
-         :port 7777
+         :port 7771
          :watch-paths ["notebooks"]
          :browse? true))
 
@@ -51,3 +51,9 @@
   [opts]
   (b/build!
    (merge static-defaults opts)))
+
+
+(comment
+  (serve!)
+  (halt!) 
+  )
